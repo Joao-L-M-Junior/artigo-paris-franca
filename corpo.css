@@ -1,0 +1,169 @@
+/* ==========================================================================
+   1. Configurações Gerais e Elementos de Bloco (Artigo e Corpo)
+   ========================================================================== */
+
+/* Define uma fonte moderna, define margens globais e uma cor de fundo suave */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fa;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centraliza o artigo na tela, define uma largura máxima e adiciona um fundo 
+   branco com cantos arredondados e uma sombra leve para dar profundidade */
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   2. Tipografia e Títulos
+   ========================================================================== */
+
+/* Estiliza o título principal do artigo (H1) dando destaque com uma cor azul escura */
+h1 {
+    color: #1a5d30;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+/* Formata o subtítulo da data (H3) tornando-o menor, mais discreto e cinza */
+h3 {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estiliza os títulos de seção (H2) com uma cor complementar elegante e uma borda inferior discreta */
+h2 {
+    color: #2c5282;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+}
+
+/* Remove margens extras e ajusta o hgroup se necessário */
+hgroup h2 {
+    border-bottom: none;
+    margin-top: 10px;
+    font-style: italic;
+    color: #4a5568;
+}
+
+/* ==========================================================================
+   3. Elementos de Mídia (Imagens e Gráficos)
+   ========================================================================== */
+
+/* Garante que as imagens sejam responsivas, centraliza-as e adiciona uma borda suave */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza a área do gráfico (figure) e sua legenda (figcaption) */
+figure {
+    margin: 30px 0;
+    text-align: center;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #4a5568;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   4. Links e Navegação
+   ========================================================================== */
+
+/* Estiliza os links padrão do site com uma cor azul e remove o sublinhado */
+a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse sobre os links: muda de cor e adiciona sublinhado */
+a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+/* Estiliza a lista da tag de navegação customizada (<nav>) */
+nav ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+nav li {
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+
+/* ==========================================================================
+   5. Listas Gerais e Seções (Gastronomia e Eventos)
+   ========================================================================== */
+
+/* Estiliza as listas comuns do artigo */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Destaca o texto marcado com a tag <mark> alterando a cor de fundo para um tom pastel */
+mark {
+    background-color: #feebc8;
+    color: #c05621;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   6. Rodapé e Informações Finais
+   ========================================================================== */
+
+/* Separa visualmente o rodapé com uma borda superior e muda a cor do fundo */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 4px;
+}
+
+/* Ajusta o texto de direitos autorais (<small>) */
+footer small {
+    display: block;
+    margin-top: 15px;
+    color: #a0aec0;
+    text-align: center;
+}
+
+/* Estiliza o parágrafo final de contato */
+article > p:last-of-type {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.95rem;
+}
